@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thespunkiller html </title>
+        <link rel="stylesheet" type="text/css" href="format.css"><!-- link til css fil -->
+        <script type="text/javascript" src="cordova.js"> </script>
+        <script type="text/javascript" src="Lone.js"> </script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="windows-1252">
+
+    </head>
+
+       <body onload="onLoad()">
+
+  		<h1>Bluifruit test</h1>
+
+  		<ul id="bleDeviceList"> </ul>
+  		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+  		<br>
+  		<div id="statusDiv">Status: Disconnected</div>
+  		<div id="bleId">DeviceId:</div>
+  		<div id="debugDiv"></div>
+  		<br><br>
+      <button id="disconnectButton"onClick="disconnect()">Disconnect</button>
+      <div id="receiveDiv"></div>
+
+
+
+
+              <div id = "content">
+
+
+              <img src="Mini.png">
+
+              <h3>Game</h3>
+
+              <h4>Udviklet af Zaeed, Niels viktor, Nicklas og Maria</h4>
+              </div>
+
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>A3</td>
+                        <td>B3</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>B2</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+                First Name :<input type="text" name="fname" id="fname">
+                Last Name :<input type="text" name="lname" id="lname">
+                Age :<input type="number" name="age" id="age">
+
+                <button  onclick="addHtmlTableRow()">Add</button>
+                <button  onclick="editHtmlTbleSelectedRow()">Edit</button>
+                <button  onclick="removeSelectedRow()">Remove</button>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="script.js"> </script>
+
+    </body>
+</html>
